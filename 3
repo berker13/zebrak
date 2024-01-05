@@ -14,9 +14,15 @@ console.log(lichost(1))
 ---------------------------------------------------------------- soucet
 
 function sectiPetCisel(cislo1, cislo2, cilo3, cislo4, cislo5) {
-    var soucet = cislo1 + cislo2 + cislo3 + cislo4 + cislo5;
+    let soucet = cislo1 + cislo2 + cislo3 + cislo4 + cislo5;
     return soucet;
 }
-var vysledek = sectiPetCisel(1, 2, 3, 4, 5);
+let vysledek = sectiPetCisel(1, 2, 3, 4, 5);
 console.log("Součet pěti čísel je: " + vysledek);
------------------------------------------------------------------
+----------------------------------------------------------------- pole nevim
+function najdi(hledany, pole) {
+    for (var i = 0; i < pole.length; i++) {
+        if (pole[i] === hledany) {
+            return i;
+        }
+    }
